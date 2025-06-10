@@ -984,7 +984,7 @@ Top Page
   }
   .about-us-p {
     font-size: 16px;
-    padding-top: 22px;
+    padding: 22px 10px 0 10px;
   }
   .aboutus-buynow-btn {
     width: 160px;
