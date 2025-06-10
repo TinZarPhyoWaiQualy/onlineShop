@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonial Section</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Section wrapper */
+    .testimonals-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    /* Title styling */
+    .testimonals-title {
+      font-size: 55px;
+      font-weight: 500;
+      color: #a1613b;
+      text-align: center;
+      padding-bottom: 60px;
+    }
+
+    /* Testimonial container */
+    .testimonals-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .testimonals {
+      max-width: 828px;
+      height: 200px;
+      position: relative;
+      border-radius: 12px;
+      background: #712c2c;
+      box-shadow: 0 15px 30px rgba(216, 211, 211, 0.05);
+    }
+
+    /* User image (above box) */
+    .testimonals::before {
+      content: "";
+      display: block;
+      width: 92px;
+      height: 132px;
+      background-image: url(../img/person.png); /* <-- Update path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -66px;
+      left: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Quote images */
+    .testimonals-p-cover::before {
+      content: "";
+      display: inline-block;
+      width: 53px;
+      height: 35px;
+      background-image: url(../img/open.png); /* <-- Update path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: -30px;
+      top: -30px;
+    }
+
+    .testimonals-p-cover::after {
+      content: "";
+      display: inline-block;
+      width: 53px;
+      height: 35px;
+      background-image: url(../img/close.png); /* <-- Update path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: -30px;
+      bottom: -30px;
+    }
+
+    /* Paragraph cover */
+    .testimonals-p-cover {
+      position: relative;
+      width: 643px;
+      margin: 0 auto;
+    }
+
+    /* Testimonial text */
+    .testimonals-p {
+      position: absolute;
+      width: 583px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 1.5;
+      text-align: center;
+      color: #ffffff;
+      font-size: 16px;
+    }
+
+    /* Responsive tweak (optional) */
+    @media (max-width: 700px) {
+      .testimonals,
+      .testimonals-p-cover,
+      .testimonals-p {
+        width: 90%;
+        max-width: none;
+      }
+
+      .testimonals-p {
+        font-size: 15px;
+      }
+
+      .testimonals::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .testimonals-p-cover::before,
+      .testimonals-p-cover::after {
+        display: none; /* hide quotes on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="testimonals-section">
+    <h2 class="testimonals-title">TESTIMONIALS</h2>
+    <div class="testimonals-wrapper">
+      <div class="testimonals">
+        <div class="testimonals-p-cover">
+          <p class="testimonals-p">
+            Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever it. Farther be chapter at visited married in it pressed. By distrusts procuring be oh frankness existence believing instantly if. Doubtful on an juvenile as of servants insisted.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
