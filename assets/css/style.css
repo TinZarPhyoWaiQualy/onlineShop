@@ -31,7 +31,6 @@ Top Page
   font-weight: 500;
 }
 .menu {
-  /* max-width: 536px; */
   display: flex;
   gap: 35px;
   font-family: "Open Sans";
@@ -257,7 +256,6 @@ Top Page
 }
 
 .about-us-mv-wrapper {
-  /* margin: 80px 85px 80px 0px; */
   max-width: 1260px;
   width: 100%;
   padding: 80px 20px 0 20px;
