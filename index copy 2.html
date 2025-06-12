@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Back to Top Example</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* Sample content to allow scrolling */
+    .content {
+      height: 2000px;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      z-index: 3000;
+      display: none;
+    }
+
+    .back-to-top img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .back-to-top img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body id="top">
+
+  <div class="content">
+    <h1>Scroll Down</h1>
+    <p>Scroll down to see the "Back to Top" button.</p>
+    <!-- You can fill this with more dummy text if needed -->
+  </div>
+
+  <!-- Back to Top Button -->
+  <div>
+    <a href="#top" class="back-to-top">
+      <img src="./assets/img/top-btn.png" alt="Back to Top" />
+    </a>
+  </div>
+
+  <!-- jQuery Script -->
+  <script>
+    $(document).ready(function () {
+      // Show/hide button on scroll
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+          $('.back-to-top').fadeIn();
+        } else {
+          $('.back-to-top').fadeOut();
+        }
+      });
+
+      // Smooth scroll to top
+      $('.back-to-top').click(function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+      });
+    });
+  </script>
+</body>
+</html>

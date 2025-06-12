@@ -11,7 +11,7 @@ $(function () {
   $(document).ready(function () {
     const $hamburger = $("#hamburger");
     const $menu = $(".menu");
-    const $icon =$(".search-icon");
+    const $icon = $(".search-icon");
     const $body = $("body");
 
     $hamburger.on("click", function () {
@@ -26,4 +26,61 @@ $(function () {
       }
     });
   });
+  //end hambuger menu
+
+  //for advertisement slider start
+  $(".advertisement").slick({
+    slidesToShow: 3,
+    infinite: true,
+    slidesToScroll: 1,
+    dots: true,
+    centerMode: true,
+    centerPadding: "50px",
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    appendDots: "#dot-container",
+    draggable: true,
+    initialSlide: 2,
+    variableWidth: true,
+  });
+  //for advertisement slider end
+
+  //for testimonals slider start
+  $(".testimonal").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        centerMode: true,
+        centerPadding: "50px",
+        focusOnSelect: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        draggable: true,
+        variableWidth: true,
+      });
+  //for testimonals slider end
+  
+
+  //for back to top btn start
+    $(document).ready(function () {
+    
+      $(window).on('scroll', function () {
+        $('.back-to-top').toggle($(this).scrollTop() > 200);
+      });
+      $('.back-to-top').on('click', function (e) {
+        e.preventDefault();
+        window.scrollTo(0, 0); 
+      });
+    });
+    //for back to top btn end
 });
+ 
+
+
+
+    

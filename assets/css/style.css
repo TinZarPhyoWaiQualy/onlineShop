@@ -72,10 +72,10 @@ Top Page
 .mv-p {
   font-family: "Open Sans";
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
   line-height: 1.6;
-  max-width: 525px;
+  max-width: 530px;
   width: 100%;
   padding-top: 8px;
 }
@@ -110,7 +110,7 @@ Top Page
 .result {
   font-family: "Open Sans";
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 .customer-result-container {
@@ -170,7 +170,7 @@ Top Page
 .why-dangila-p {
   font-family: "Open Sans";
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
   margin: 0 auto;
   max-width: 660px;
@@ -240,7 +240,7 @@ Top Page
   line-height: 1.75;
   font-family: "Open Sans";
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   color: #757575;
 }
 .about-us-img {
@@ -249,10 +249,10 @@ Top Page
 .about-us-flex {
   width: fit-content;
   display: flex;
-  gap: 60px;
+  gap: 40px;
 }
 .about-us-cover {
-  width: calc(100% - 691px);
+  width: calc(100% - 671px);
 }
 
 .about-us-mv-wrapper {
@@ -274,7 +274,7 @@ Top Page
 .about-us-p {
   font-family: "Open Sans";
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
   color: #4d4d4d;
   padding-top: 42px;
@@ -286,7 +286,7 @@ Top Page
   background: #a1613b;
   color: #fff;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   display: flex;
   align-items: center;
   border-radius: 100vmax;
@@ -301,7 +301,7 @@ Top Page
   background: #383838;
   color: #fff;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   display: flex;
   align-items: center;
   border-radius: 100vmax;
@@ -355,85 +355,109 @@ Top Page
 .dangila-header-wrapper {
   background: #ddc0ae;
 }
+.testimonals-section {
+  text-align: center;
+}
 .testimonals-title {
   font-family: "Roboto";
   font-size: 55px;
   font-weight: 500;
   color: #a1613b;
-  text-align: center;
-  padding-bottom: 181px;
+  margin-top: 66px;
+}
+.testimonals-wrapper {
+  max-width: 903px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 38px 2px 20px 2px;
 }
 .testimonals {
   position: relative;
-  border-radius: 12px;
+  border-radius: 10px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   background: #ffffff;
   box-shadow: rgb(44 30 30 / 18%) 0px 15px 30px;
+  padding:20px;
+  max-width: 863px;
+  margin-top: 100px;
+  width: 100%;
+  height: 200px;
 }
+
 .testimonals::before {
   content: "";
   display: inline-block;
   width: 92px;
   height: 132px;
   background-image: url(../img/person.png);
-  background-size: cover;
-  margin-right: 15px;
-  position: relative;
-  bottom: 109px;
-  left: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -100px;
+  left: 17px;
 }
 
-.testimonals-p {
-  position: absolute;
-  max-width: 646px;
-  width: 100%;
-  line-height: 1.5;
+.testimonals-p-cover {
+  margin: 0 auto;
+  position: relative;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  line-height: 1.5;
-  text-align: center;
-  margin-left: 25px;
 }
+
 .testimonals-p-cover::before {
   content: "";
   display: inline-block;
   width: 53px;
   height: 35px;
   background-image: url(../img/open.png);
-  background-size: cover;
-  margin-right: 15px;
-  position: relative;
-  left: 74px;
-  bottom: 115px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -72px;
+  left: 64px;
 }
+
 .testimonals-p-cover::after {
   content: "";
   display: inline-block;
   width: 53px;
   height: 35px;
   background-image: url(../img/close.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 15px;
-  position: relative;
-  left: 648px;
-  bottom: 21px;
+  position: absolute;
+  right: 58px;
+  bottom: -63px;
 }
-.testimonals-p-cover {
-  max-width: 643px;
+.testimonals-p {
+  position: absolute;
+  max-width: 646px;
+  font-size: 16px;
+  color: #8c8c8c;
   width: 100%;
+  line-height: 1.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.5;
+  text-align: center;
+  margin-left: 38px;
 }
-.testimonals-wrapper {
-  max-width: 903px;
-  width: 100%;
-  padding: 20px;
+.slick-dots li button:before {
+  color: #a1613b;
 }
-.testimonals-section {
+.person-img {
+  width: 92px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 8px;
+  position: absolute;
+  top: -66px;
+  left: 20px;
+  z-index: 2;
+}
+.testimonal {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  margin: 66px 20px 80px 20px;
 }
 .psychology-img {
   max-width: 150px;
@@ -467,6 +491,7 @@ Top Page
 }
 .advertisement-wrapper {
   background: #fafafa;
+  margin-top: 80px;
 }
 .subscribe {
   max-width: 1280px;
@@ -493,7 +518,7 @@ Top Page
 .subscribe-span {
   font-family: "Open Sans";
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #555454;
   line-height: 1.2;
 }
@@ -502,12 +527,12 @@ Top Page
   padding-bottom: 18px;
 }
 .email {
-  max-width: 151px;
+  max-width: 161px;
   margin-left: 20px;
   color: #989898;
   font-size: 18px;
   font-family: "Open Sans";
-  font-weight: 300;
+  font-weight: 400;
 }
 .start-btn {
   width: 192px;
@@ -555,13 +580,13 @@ Top Page
 .contacts {
   display: flex;
   flex-direction: column;
-  max-width: 254px;
+  max-width: 262px;
   width: 100%;
   gap: 49px;
 }
 .contacts-wrapper {
   display: flex;
-  gap: 101px;
+  gap: 95px;
   width: fit-content;
   margin: 0 auto;
   max-width: 1208px;
@@ -585,17 +610,17 @@ Top Page
 .contacts-subscribe {
   display: flex;
   flex-direction: column;
-  max-width: 245px;
+  max-width: 255px;
   width: 100%;
   font-family: "Open Sans";
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   gap: 27px;
 }
 .address {
   font-family: "Open Sans";
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: #4c4c4c;
   line-height: 1.2;
   position: relative;
@@ -613,7 +638,7 @@ Top Page
 .phone-contact {
   font-family: "Open Sans";
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: #4c4c4c;
   position: relative;
   padding-left: 28px;
@@ -631,7 +656,7 @@ Top Page
 .email-contact {
   font-family: "Open Sans";
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   color: #a1613b;
   position: relative;
   padding-left: 28px;
@@ -652,7 +677,7 @@ Top Page
 }
 .enter-email {
   color: #837c7c;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 .join-btn {
   width: 70px;
@@ -678,7 +703,7 @@ Top Page
 .contacts-span {
   font-family: "Open Sans";
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: #707070;
 }
 .contacts-wrapper-cover {
@@ -697,6 +722,7 @@ Top Page
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .hamburger-menu {
   cursor: pointer;
   display: none;
@@ -707,12 +733,12 @@ Top Page
 .bar {
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: #a1613b;
   transition: all 0.3s ease-in-out;
 }
 .first-bar {
-  top: 5px;
+  top: 6px;
 }
 .second-bar {
   top: 16px;
@@ -751,9 +777,9 @@ Top Page
   }
 }
 @media screen and (max-width: 1202px) {
-  .contacts-wrapper{
+  .contacts-wrapper {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 1216px) {
@@ -773,7 +799,7 @@ Top Page
   }
   .subscribe-div {
     margin: 0 auto;
-    max-width: 402px;
+    max-width: 502px;
   }
   .email-searchbox {
     margin: 0 auto;
@@ -806,8 +832,6 @@ Top Page
     padding: 0;
   }
 }
-
-
 @media screen and (max-width: 1051px) {
   .mv-p {
     max-width: 380px;
@@ -901,7 +925,7 @@ Top Page
   .menu a::after {
     content: " →";
     position: absolute;
-    right: 27px;
+    right: 44px;
     font-size: 18px;
     color: #666;
     top: 50%;
@@ -921,6 +945,32 @@ Top Page
     width: 220px;
     height: 60px;
     padding-left: 24px;
+  }
+  .testimonals-p {
+    /* max-width: 300px; */
+    margin: 0;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .testimonals {
+    max-width: 503px;
+    margin: 100px auto 20px auto;
+  }
+  .testimonals::before {
+    left: 45px;
+    width: 101px;
+    height: 102px;
+    top: -68px;
+  }
+  .testimonals-p-cover::after {
+    right: 54px;
+    bottom: -76px;
+    width: 35px;
+  }
+  .testimonals-p-cover::before {
+    top: -69px;
+    left: 0px;
+    width: 35px;
   }
 }
 
@@ -1001,6 +1051,13 @@ Top Page
   .about-us-flex {
     gap: 25px;
   }
+  .testimonals-title {
+    font-size: 40px;
+  }
+  .back-to-top {
+    bottom: 50px;
+    right: 0px;
+  }
 }
 
 @media screen and (max-width: 657px) {
@@ -1009,16 +1066,16 @@ Top Page
   }
 }
 @media screen and (max-width: 657px) {
-  .contacts-wrapper{
+  .contacts-wrapper {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 60px;
   }
   .contacts-wrapper-cover {
     padding: 60px 0px 70px 0px;
   }
-  .contacts{
-    gap:38px;
+  .contacts {
+    gap: 38px;
   }
 }
 
@@ -1064,22 +1121,52 @@ Top Page
     flex-direction: column;
   }
 }
+@media screen and (max-width: 538px) {
+  .testimonals-p {
+    max-width: 300px;
+    margin: 0;
+    font-size: 13px;
+    /* margin-top: 25px; */
+  }
+  .testimonals {
+    max-width: 303px;
+    margin: 100px auto 20px auto;
+  }
+  .testimonals::before {
+    top: -63px;
+    width: 91px;
+    height: 80px;
+    left: 54px;
+  }
+  .testimonals-p-cover::after {
+    right: 15px;
+    bottom: -96px;
+    width: 28px;
+  }
+  .testimonals-p-cover::before {
+    top: -93px;
+    left: 0px;
+    width: 28px;
+  }
+  .testimonals-wrapper{
+    padding: 20px 2px 20px 2px;
+  }
+}
 @media screen and (max-width: 508px) {
   .contacts-wrapper-cover {
     padding: 40px 0px 40px 0px;
-}
-.contacts {
-  gap:20px;
-}
-.contacts-wrapper{
-  
-  gap:50px;
-}
+  }
+  .contacts {
+    gap: 20px;
+  }
+  .contacts-wrapper {
+    gap: 50px;
+  }
 }
 
 @media screen and (max-width: 384px) {
   .email-searchbox {
-    gap: 10px;
+    gap: 8px;
   }
 }
 

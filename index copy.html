@@ -1,85 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Testimonial Section</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/slick/slick-theme.css" />
+  </head>
   <style>
-    /* Global styles */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f7f7f7;
+    /* body {
+      background-color: #eee;
+    } */
+
+    /* .slick-track {
       display: flex;
+      gap: 50px;
+    } */
+
+    /* .slider-cont {
+      width: 100%;
+    }
+
+    .slider-cont .slick-child {
+      width: 100%;
+      max-width: 300px;
+      background-color: red;
+    } */
+
+    /* .slick-prev {
+      left: 0;
+      background-color: red;
+    }
+
+    .slick-next {
+      background-color: red;
+    } */
+    /* .psychology-img {
+      max-width: 150px;
+      padding: 20px;
+    }
+    .wellmune-img {
+      max-width: 135px;
+      padding: 20px;
+    }
+    .kerry-img {
+      max-width: 120px;
+      padding: 20px;
+    }
+    .albion-img {
+      max-width: 140px;
+      padding: 20px;
+    }
+    .traacs-img {
+      max-width: 147px;
+      padding: 20px;
+    }
+    .advertisement-wrapper {
+      background: #fafafa;
+    }
+    .advertisement {
+      display: flex;
+      max-width: 1080px;
+      padding: 6px 20px 5px 20px;
+      width: 100%;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-    }
+      gap: 90px;
+      margin: 0 auto;
+    } */
 
-    /* Section wrapper */
-    .testimonals-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-    }
-
-    /* Title styling */
-    .testimonals-title {
+    /* .testimonals-title {
+      font-family: "Roboto";
       font-size: 55px;
       font-weight: 500;
       color: #a1613b;
       text-align: center;
-      padding-bottom: 60px;
+      padding-bottom: 181px;
     }
-
-    /* Testimonial container */
-    .testimonals-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
     .testimonals {
-      max-width: 828px;
-      height: 200px;
       position: relative;
       border-radius: 12px;
-      background: #712c2c;
-      box-shadow: 0 15px 30px rgba(216, 211, 211, 0.05);
+      background: #ffffff;
+      box-shadow: rgb(44 30 30 / 18%) 0px 15px 30px;
     }
-
-    /* User image (above box) */
     .testimonals::before {
       content: "";
-      display: block;
+      display: inline-block;
       width: 92px;
       height: 132px;
-      background-image: url(../img/person.png); /* <-- Update path */
+      background-image: url(./assets/img/person.png);
       background-size: cover;
-      background-repeat: no-repeat;
-      position: absolute;
-      top: -66px;
-      left: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-right: 15px;
+      position: relative;
+      bottom: 109px;
+      right: 362px;
     }
 
-    /* Quote images */
+    .testimonals-p {
+      position: absolute;
+      max-width: 646px;
+      width: 100%;
+      line-height: 1.5;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 1.5;
+      text-align: center;
+      margin-left: 25px;
+    }
     .testimonals-p-cover::before {
       content: "";
       display: inline-block;
       width: 53px;
       height: 35px;
-      background-image: url(../img/open.png); /* <-- Update path */
+      background-image: url(./assets/img/open.png);
+      background-size: cover;
+      margin-right: 15px;
+      position: relative;
+      left: -154px;
+      bottom: 115px;
+    }
+    .testimonals-p-cover::after {
+      content: "";
+      display: inline-block;
+      width: 53px;
+      height: 35px;
+      background-image: url(./assets/img/close.png);
       background-size: cover;
       background-repeat: no-repeat;
+      margin-right: 15px;
+      position: relative;
+      left: 396px;
+      bottom: 21px;
+    }
+    .testimonals-p-cover {
+      max-width: 643px;
+      width: 100%;
+    }
+    .testimonals-wrapper {
+      max-width: 903px;
+      width: 100%;
+      padding: 20px;
+    }
+    .testimonals-section {
+      text-align: center;
+      padding: 20px;
+      margin: 66px 20px 80px 20px;
+    } */
+    /* body {
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    } */
+
+    .testimonals-section {
+      text-align: center;
+    }
+
+    .testimonals-title {
+      font-family: "Roboto";
+      font-size: 55px;
+      font-weight: 500;
+      color: #a1613b;
+    }
+
+    .testimonals-wrapper {
+      max-width: 903px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 38px 2px 20px 2px;
+    }
+
+    .testimonals {
+      position: relative;
+      border-radius: 12px;
+      background: #ffffff;
+      box-shadow: rgb(44 30 30 / 18%) 0px 15px 30px;
+      padding: 60px 20px;
+      max-width: 837px;
+      margin-top: 100px;
+      width: 100%;
+      height: 80px;
+    }
+
+    .testimonals::before {
+      content: "";
+      display: inline-block;
+      width: 92px;
+      height: 132px;
+      background-image: url(./assets/img/person.png);
+      background-size: cover;
       position: absolute;
-      left: -30px;
-      top: -30px;
+      top: -85px;
+      left: 48px;
+    }
+
+    .testimonals-p-cover {
+      max-width: 643px;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .testimonals-p-cover::before {
+      content: "";
+      display: inline-block;
+      width: 53px;
+      height: 35px;
+      background-image: url(./assets/img/open.png);
+      background-size: cover;
+      position: absolute;
+      top: -27px;
+      left: 25px;
     }
 
     .testimonals-p-cover::after {
@@ -87,71 +221,229 @@
       display: inline-block;
       width: 53px;
       height: 35px;
-      background-image: url(../img/close.png); /* <-- Update path */
+      background-image: url(./assets/img/close.png);
       background-size: cover;
-      background-repeat: no-repeat;
       position: absolute;
-      right: -30px;
-      bottom: -30px;
+      right: 11px;
+      bottom: -107px;
     }
 
-    /* Paragraph cover */
-    .testimonals-p-cover {
-      position: relative;
-      width: 643px;
-      margin: 0 auto;
-    }
-
-    /* Testimonial text */
     .testimonals-p {
       position: absolute;
-      width: 583px;
+      max-width: 571px;
+      height: 54px;
+      font-size: 18px;
+      width: 100%;
+      line-height: 1.6;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       line-height: 1.5;
       text-align: center;
-      color: #ffffff;
-      font-size: 16px;
+      margin-left: 38px;
     }
 
-    /* Responsive tweak (optional) */
-    @media (max-width: 700px) {
-      .testimonals,
-      .testimonals-p-cover,
-      .testimonals-p {
-        width: 90%;
-        max-width: none;
-      }
-
-      .testimonals-p {
-        font-size: 15px;
-      }
-
-      .testimonals::before {
-        left: 50%;
-        transform: translateX(-50%);
-      }
-
-      .testimonals-p-cover::before,
-      .testimonals-p-cover::after {
-        display: none; /* hide quotes on small screens */
-      }
+    .slick-dots li button:before {
+      color: #a1613b;
     }
+    .person-img {
+      width: 92px;
+      height: 132px;
+      object-fit: cover;
+      border-radius: 8px;
+      position: absolute;
+      top: -66px;
+      left: 20px;
+      z-index: 2;
+    }
+    .test {
+      display: flex;
+    }
+    /* .testimonals {
+      position: relative;
+      padding-top: 80px; 
+      margin-top: 100px;
+    } */
   </style>
-</head>
-<body>
-  <section class="testimonals-section">
-    <h2 class="testimonals-title">TESTIMONIALS</h2>
-    <div class="testimonals-wrapper">
-      <div class="testimonals">
-        <div class="testimonals-p-cover">
-          <p class="testimonals-p">
-            Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever it. Farther be chapter at visited married in it pressed. By distrusts procuring be oh frankness existence believing instantly if. Doubtful on an juvenile as of servants insisted.
-          </p>
+  <body>
+    <!-- <div class="slider-cont">
+        <div class="slick-child"><img src="./assets/img/kerry.png" alt=""></div>
+
+        <div class="slick-child"><img src="./assets/img/albion.png" alt=""></div>
+
+        <div class="slick-child"><img src="./assets/img/psychology.png" alt=""></div>
+
+        <div class="slick-child"><img src="./assets/img/kerry.png" alt=""></div>
+
+        <div class="slick-child"><img src="./assets/img/albion.png" alt=""></div>
+
+        <div class="slick-child"><img src="./assets/img/psychology.png" alt=""></div>
+    </div> -->
+
+    <!-- <div class="advertisement-wrapper">
+      <div class="advertisement">
+        <div>
+          <img src="./assets/img/psychology.png" class="psychology-img" />
+        </div>
+        <div><img src="./assets/img/wellmune.png" class="wellmune-img" /></div>
+        <div><img src="./assets/img/kerry.png" class="kerry-img" /></div>
+        <div><img src="./assets/img/albion.png" class="albion-img" /></div>
+        <div><img src="./assets/img/traacs.png" class="traacs-img" /></div>
+      </div>
+    </div> -->
+
+    <div class="testimonals-section">
+      <h2 class="testimonals-title">TESTIMONIALS</h2>
+      <div class="test">
+        <div class="testimonals-wrapper">
+          <div class="testimonals">
+            <div class="testimonals-p-cover">
+              <p class="testimonals-p">
+                Yourself required no at thoughts delicate landlord it be.
+                Branched dashwood do is whatever it. Farther be chapter at
+                visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an
+                juvenile as of servants insisted.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonals-wrapper">
+          <div class="testimonals">
+            <div class="testimonals-p-cover">
+              <p class="testimonals-p">
+                Yourself required no at thoughts delicate landlord it be.
+                Branched dashwood do is whatever it. Farther be chapter at
+                visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an
+                juvenile as of servants insisted.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonals-wrapper">
+          <div class="testimonals">
+            <div class="testimonals-p-cover">
+              <p class="testimonals-p">
+                Yourself required no at thoughts delicate landlord it be.
+                Branched dashwood do is whatever it. Farther be chapter at
+                visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an
+                juvenile as of servants insisted.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonals-wrapper">
+          <div class="testimonals">
+            <div class="testimonals-p-cover">
+              <p class="testimonals-p">
+                Yourself required no at thoughts delicate landlord it be.
+                Branched dashwood do is whatever it. Farther be chapter at
+                visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an
+                juvenile as of servants insisted.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-</body>
+
+    <!-- <div class="testimonals-section">
+      <h2 class="testimonals-title">TESTIMONIALS</h2>
+      <div class="testimonals-wrapper">
+        <div class="testimonals">
+          <img src="./assets/img/person.png" class="person-img" alt="person" />
+          <div class="testimonals-p-cover">
+            <p class="testimonals-p">
+             Yourself required no at thoughts delicate landlord it be.
+                Branched dashwood do is whatever it. Farther be chapter at
+                visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an
+                juvenile as of servants insisted.
+            </p>
+          </div>
+        </div>
+        <div class="testimonals">
+          <img src="./assets/img/person.png" class="person-img" alt="person" />
+          <div class="testimonals-p-cover">
+            <p class="testimonals-p">
+             Yourself required no at thoughts delicate landlord it be.
+                Branched dashwood do is whatever it. Farther be chapter at
+                visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an
+                juvenile as of servants insisted.
+            </p>
+          </div>
+        </div>
+        <div class="testimonals">
+          <img src="./assets/img/person.png" class="person-img" alt="person" />
+          <div class="testimonals-p-cover">
+            <p class="testimonals-p">
+             Yourself required no at thoughts delicate landlord it be.
+                Branched dashwood do is whatever it. Farther be chapter at
+                visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an
+                juvenile as of servants insisted.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>  -->
+
+    <!-- <div id="dot-container"></div>
+
+    <div class="slick-btns">
+      <button id="slick-prev">Prev</button>
+      <button id="slick-next">Next</button>
+    </div> -->
+    <!-- <div class="testimonals">
+      <img src="./assets/img/person.png" class="person-img" alt="person" />
+      <div class="testimonals-p-cover">
+        <p class="testimonals-p">
+          Yourself required no at thoughts delicate landlord it be. Branched
+          dashwood do is whatever it. Farther be chapter at visited married in
+          it pressed.
+        </p>
+      </div>
+    </div> -->
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      // $(".testimonals-wrapper").slick({
+      //   slidesToShow: 1,
+      //   infinite: true,
+      //   slidesToScroll: 1,
+      //   dots: true,
+      //   centerMode: true,
+      //   centerPadding: "50px",
+      //   focusOnSelect: true,
+      //   autoplay: true,
+      //   autoplaySpeed: 2000,
+      //   arrows: true,
+      //   appendDots: "#dot-container",
+      //   draggable: true,
+      //   initialSlide: 2,
+      //   variableWidth: true,
+      // });
+
+      $(".test").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        centerMode: true,
+        centerPadding: "50px",
+        focusOnSelect: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: true,
+        draggable: true,
+        variableWidth: true,
+      });
+    </script>
+  </body>
 </html>
