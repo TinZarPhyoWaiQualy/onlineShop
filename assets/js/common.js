@@ -30,9 +30,9 @@ $(function () {
 
   //for advertisement slider start
   $(".advertisement").slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     infinite: true,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     dots: true,
     centerMode: true,
     centerPadding: "50px",
@@ -57,7 +57,7 @@ $(function () {
         centerMode: true,
         centerPadding: "50px",
         focusOnSelect: true,
-        autoplay: true,
+        autoplay: true ,
         autoplaySpeed: 2000,
         arrows: false,
         draggable: true,
