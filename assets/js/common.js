@@ -1,5 +1,7 @@
 // Your JavaScript code goes here
-document.addEventListener("DOMContentLoaded", () => {});
+document.addEventListener("DOMContentLoaded", () => {
+  
+});
 
 // Your jQuery code goes here
 $(function () {
@@ -55,7 +57,7 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 1000,
         centerMode: true,
-        centerPadding: "50px",
+        centerPadding: "100px",
         focusOnSelect: true,
         autoplay: true ,
         autoplaySpeed: 2000,
@@ -67,16 +69,22 @@ $(function () {
   
 
   //for back to top btn start
-    $(document).ready(function () {
-    
-      $(window).on('scroll', function () {
-        $('.back-to-top').toggle($(this).scrollTop() > 200);
-      });
-      $('.back-to-top').on('click', function (e) {
-        e.preventDefault();
-        window.scrollTo(0, 0); 
-      });
-    });
+
+$(document).ready(function () {
+  
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 200) {
+      $('.back-to-top').fadeIn();
+    } else {
+      $('.back-to-top').fadeOut();
+    }
+  });
+  $('.back-to-top').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 200); 
+  });
+});
+ 
     //for back to top btn end
 });
  
