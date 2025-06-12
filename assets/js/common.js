@@ -32,9 +32,9 @@ $(function () {
 
   //for advertisement slider start
   $(".advertisement").slick({
-    slidesToShow: 4,
+    slidesToShow: 5,
     infinite: true,
-    slidesToScroll: 3,
+    slidesToScroll: 2,
     dots: true,
     centerMode: true,
     centerPadding: "50px",
@@ -47,6 +47,8 @@ $(function () {
     initialSlide: 2,
     variableWidth: true,
   });
+
+ 
   //for advertisement slider end
 
   //for testimonals slider start

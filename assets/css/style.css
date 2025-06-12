@@ -8,7 +8,7 @@ Top Page
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 39px 39px 71px 38px;
+  padding: 39px 39px 71px 28px;
   justify-content: space-between;
   background: #ddc0ae;
 }
@@ -140,7 +140,7 @@ Top Page
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 11px;
 }
 .num-result-followers {
   max-width: 130px;
@@ -213,7 +213,7 @@ Top Page
   padding: 37px 0px 13px 0px;
   font-family: "Open Sans";
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
 }
 .no-side-effect {
@@ -357,19 +357,20 @@ Top Page
 }
 .testimonals-section {
   text-align: center;
+  margin-top: 59px;
 }
 .testimonals-title {
   font-family: "Roboto";
   font-size: 55px;
   font-weight: 500;
   color: #a1613b;
-  margin-top: 66px;
+  padding-top: 66px;
 }
 .testimonals-wrapper {
   max-width: 903px;
   width: 100%;
   margin: 0 auto;
-  padding: 38px 2px 20px 2px;
+  padding: 38px 2px 70px 2px;
 }
 .testimonals {
   position: relative;
@@ -460,33 +461,54 @@ Top Page
   display: flex;
 }
 .psychology-img {
-  max-width: 150px;
-  padding: 20px;
+  /* max-width: 150px;
+  padding: 20px; */
+  width: 150px;
+  height: 39px;
+  object-fit: contain;
 }
 .wellmune-img {
-  max-width: 135px;
-  padding: 20px;
+  /* max-width: 135px;
+  padding: 20px; */
+  width: 134px;
+  height: 25px;
+  object-fit: contain;
 }
 .kerry-img {
-  max-width: 120px;
-  padding: 20px;
+  /* max-width: 120px;
+  padding: 15px 20px 24px 20px; */
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
 }
 .albion-img {
-  max-width: 140px;
-  padding: 20px;
+  /* max-width: 140px;
+  padding: 20px; */
+  width: 140px;
+  height: 35px;
+  object-fit: contain;
 }
 .traacs-img {
-  max-width: 147px;
-  padding: 20px;
+  /* max-width: 147px;
+  padding: 20px; */
+  width: 146px;
+  height: 80px;
+  object-fit: contain;
+}
+.advertisement .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
 }
 .advertisement {
   display: flex;
   max-width: 1080px;
+  height: 131px;
   padding: 6px 20px 5px 20px;
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 90px;
   margin: 0 auto;
 }
 .advertisement-wrapper {
@@ -498,7 +520,7 @@ Top Page
   display: flex;
   gap: 31px;
   margin: 0 auto;
-  padding: 80px 20px 0 20px;
+  padding: 45px 20px 0 20px;
 }
 .subscribe-img {
   max-width: 589px;
@@ -541,7 +563,7 @@ Top Page
   background: #a1613b;
   color: #fff;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   display: flex;
   align-items: center;
   border-radius: 100vmax;
@@ -659,7 +681,7 @@ Top Page
   font-weight: 400;
   color: #a1613b;
   position: relative;
-  padding-left: 28px;
+  padding-left: 32px;
   padding-top: 3px;
 }
 .email-contact::before {
@@ -690,7 +712,7 @@ Top Page
   position: relative;
   padding-left: 20px;
   text-decoration: none;
-  margin: 3px 5px 3px 0;
+  margin: 4px 3px 4px 0;
 }
 .email-join {
   display: flex;
@@ -698,6 +720,7 @@ Top Page
   justify-content: center;
   max-width: 227px;
   gap: 46px;
+  border-radius: 4px;
   border: 1px solid #837c7c;
 }
 .contacts-span {
@@ -973,6 +996,12 @@ Top Page
     left: 0px;
     width: 35px;
   }
+  .advertisement-wrapper {
+    margin-top: 40px;
+  }
+  .testimonals-wrapper {
+    padding: 38px 2px 30px 2px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1062,6 +1091,27 @@ Top Page
   .back-to-top img {
     width: 40px;
     height: 40px;
+    margin-right: 15px;
+  }
+
+  .testimonals-section {
+    margin-top: 0;
+  }
+
+  .advertisement-wrapper {
+    margin-top: 20px;
+  }
+  .testimonals-section {
+    margin-top: 0;
+  }
+  .subscribe {
+    padding-top: 0px;
+  }
+  .subscribe-p {
+    padding-top: 0px;
+  }
+  .advertisement{
+    height:100px;
   }
 }
 
@@ -1131,7 +1181,6 @@ Top Page
     max-width: 300px;
     margin: 0;
     font-size: 13px;
-    /* margin-top: 25px; */
   }
   .testimonals {
     max-width: 303px;
