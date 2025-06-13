@@ -744,8 +744,6 @@ Top Page
   width: 80px;
   height: 80px;
   cursor: pointer;
-  /* border-radius: 50%; */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .hamburger-menu {
