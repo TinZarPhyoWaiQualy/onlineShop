@@ -503,7 +503,7 @@ Top Page
 }
 .advertisement {
   display: flex;
-  max-width: 1080px;
+  /* max-width: 1080px; */
   height: 131px;
   padding: 6px 20px 5px 20px;
   width: 100%;
